@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Index</title>
+    {% load static %}
+    <link href="{% static 'gender/css/gender.css' %}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+  </head>
+  <body>
+    <div class="bar hdnft">
+        <p>memento's</p>
+    </div>
+
+    <div class="bar" id="tools">
+      <input type="text" spellcheck="false" class="readwrite" id="queryInput" placeholder="query"></input>
+      <i class="material-icons btn" id="searchBtn">search</i>
+      <i class="material-icons btn" id="shareBtn">share</i>
+      <input type="text" spellcheck="false" class="readwrite" id="mAddrInput" placeholder="Your E-mail adress"></input>
+      <i class="material-icons btn submit" id="mailSubmit">check</i>
+      <i class="material-icons btn error" id="mailErr">clear</i>
+      <i class="material-icons btn" id="mailBtn">mail</i>
+      <i class="material-icons btn" id="clockBtn">access_time</i>
+      <i class="material-icons btn" id="settingsBtn">settings</i>
+      <i class="material-icons btn" id="soundBtn">volume_mute</i>
+      <i class="material-icons btn" id="listBtn">list</i>
+      <i class="material-icons btn" id="expBtn">description</i>
+      <i class="material-icons btn" id="nightModeBtn">invert_colors</i>
+      <i class="material-icons btn" id="collapseBtn">eject</i>
+      <ul id="entryList" class="themeList"></ul>
+    </div>
+    <div class="con">
+      <p class="line">
+        <span class="readwrite gender" spellcheck="false">&nbsp</span>
+        <span class="readwrite gender" spellcheck="false">&nbsp</span>
+        <span class="readwrite gender" spellcheck="false">&nbsp</span>
+        <span id="word"></span>
+      </p>
+    </div>
+
+    <div id="tip" class="con">
+      <p>Try entering 1</p>
+    </div>
+
+    <div class="con" id="exp"></div>
+    <div class="con" id="mistakeList">
+      <ul></ul>
+    </div>
+    <div id="hint" class="footer"> FALSE </div>
+    <div class="footer hdnft">
+    </div>
+
+    {% load static %}
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="{% static 'gender/js/gender.js' %}"></script>
+    <script src="{% static 'gender/js/toolBtns.js' %}"></script>
+    <script src="{% static 'gender/js/jquery.color.plus-names-2.1.2.js' %}"></script>
+  </body>
+</html>
